@@ -3,7 +3,6 @@
 Bem-vindo ao Retro Game Launcher! Este é um aplicativo desktop construído para gerenciar e jogar seus jogos retrô favoritos, com uma biblioteca sincronizada na nuvem e integração com o emulador RetroArch.
 
 ![Gameplay Screenshot Placeholder](https://via.placeholder.com/800x450.png?text=Seu+Game+Launcher+em+Ação)
-*(Substitua o placeholder acima por uma captura de tela do seu aplicativo quando estiver mais completo!)*
 
 ## 🚀 Funcionalidades Principais
 
@@ -101,3 +100,16 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
     Isso empacotará seu aplicativo em um executável distribuível na pasta `out`.
 
 ## 📂 Estrutura de Pastas (Simplificada)
+/
+|-- electron/         # Código do processo principal do Electron (main.ts, preload.ts)
+|-- vendor/           # Arquivos de terceiros (RetroArch)
+|   |-- RetroArch/    # Conteúdo do RetroArch portátil
+|-- src/              # Código fonte do frontend React
+|   |-- components/   # Componentes React reutilizáveis
+|   |-- lib/          # Módulos auxiliares (ex: supabaseClient.ts)
+|   |-- App.tsx       # Componente principal do React
+|   |-- main.tsx      # Ponto de entrada do React
+|-- .env              # Variáveis de ambiente (NÃO ENVIE PARA O GITHUB)
+|-- forge.config.ts   # Configuração do Electron Forge
+|-- package.json
+|-- ...outros arquivos de configuração
