@@ -69,7 +69,6 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
         * `games`
         * `user_favorites`
         * `emulators`
-        *(Você pode adicionar os scripts SQL que criamos aqui ou referenciar uma pasta `supabase/migrations` se estiver usando o Supabase CLI).*
     * Configure as **Row Level Security (RLS) Policies** para cada tabela, conforme discutimos, para garantir a segurança e privacidade dos dados dos usuários.
 
 5.  **Configure o Supabase Storage:**
@@ -102,14 +101,26 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 ## 📂 Estrutura de Pastas (Simplificada)
 /
 |-- electron/         # Código do processo principal do Electron (main.ts, preload.ts)
+
 |-- vendor/           # Arquivos de terceiros (RetroArch)
+
 |   |-- RetroArch/    # Conteúdo do RetroArch portátil
+
 |-- src/              # Código fonte do frontend React
+
 |   |-- components/   # Componentes React reutilizáveis
+
 |   |-- lib/          # Módulos auxiliares (ex: supabaseClient.ts)
+
 |   |-- App.tsx       # Componente principal do React
+
 |   |-- main.tsx      # Ponto de entrada do React
+
 |-- .env              # Variáveis de ambiente (NÃO ENVIE PARA O GITHUB)
+
 |-- forge.config.ts   # Configuração do Electron Forge
+
 |-- package.json
+
 |-- ...outros arquivos de configuração
+
